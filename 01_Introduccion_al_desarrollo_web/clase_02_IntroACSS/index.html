@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro a CSS</title>
+
+    <!-- Mediante ETIQUETAS -->
+
+    <!-- <style>
+      p {
+        background-color: brown;
+        color: rgb(223, 160, 115);
+      }
+
+      body {
+        background-color: burlywood;
+        color: rgb(23, 62, 62);
+      }
+    </style> -->
+
+    <!-- Mediante ARCHIVOS EXTERNOS -->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Introduccion a CSS</h1>
+
+    <!-- Mediante ATRIBUTOS -->
+    <p
+      style="
+        background-color: #333138;
+        border: 4px solid #ff312e;
+        border-radius: 10px;
+      "
+    >
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, ad,
+      dolorum aperiam deleniti nam voluptatem cum iure libero, non aut repellat
+      amet. Et cum hic, quam in libero id temporibus.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem,
+      nihil!
+    </p>
+
+    <div class="caja-parrafos">
+      <p class="primero-ultimo tamaño-letra">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+      </p>
+      <p class="tamaño-letra">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+        <span>OTRO PARRAFO DE PRUEBA</span>
+      </p>
+      <p class="general" id="otro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+      </p>
+
+      <p class="general">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+        <span>PARRAFO PRUEBA</span>
+      </p>
+
+      <!-- LOS ID NUNCA SE REPITEN -->
+      <p class="general" id="unico">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+      </p>
+      <p class="primero-ultimo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat.
+
+        <span>MÁS PARRAFOS DE PRUEBA</span>
+      </p>
+    </div>
+
+    <div class="img-descripcion">
+      <img
+        src="https://images.unsplash.com/photo-1721332153282-3be1f363074d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        width="300px"
+        height="400px"
+      />
+
+      <p>Descripcion de imagen</p>
+    </div>
+
+    <ul class="caja-parrafos">
+      <li>ITEM</li>
+      <li>ITEM</li>
+      <li>ITEM</li>
+      <li>ITEM</li>
+      <li>ITEM</li>
+    </ul>
+  </body>
+</html>

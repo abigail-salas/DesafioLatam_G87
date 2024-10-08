@@ -1,0 +1,139 @@
+body {
+  background-color: #0b0312;
+  color: #d6e5e3;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* BLOQUES - LINEA */
+
+.linea {
+  display: block;
+  border: 2px solid;
+  background-color: #cacfd6;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bloque {
+  display: inline;
+  border: 2px solid;
+  background-color: #424874;
+  margin: 20px;
+}
+
+/* FLEXBOX */
+
+/* div * {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #dcd6f7;
+  margin: 10px;
+  background-color: #424874;
+  text-align: center;
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #dcd6f7;
+  margin: 10px;
+  background-color: #424874;
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+
+.boxes2 {
+  display: flex;
+  margin: 5px;
+  justify-content: end;
+}
+
+.boxes3 {
+  display: flex;
+  margin: 5px;
+  justify-content: flex-start;
+}
+
+.boxes4 {
+  display: flex;
+  margin: 5px;
+  justify-content: space-around;
+}
+
+.boxes5 {
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.boxes6 {
+  display: flex;
+  margin: 5px;
+  justify-content: space-evenly;
+}
+
+.boxes7 {
+  display: flex;
+  margin: 5px;
+  /* flex-wrap: wrap-reverse; */
+  flex-wrap: wrap;
+}
+
+/* NAVBAR */
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  justify-content: space-evenly;
+  background-color: #f07167;
+  color: black;
+}
+
+ul li {
+  padding: 1.5rem 5rem;
+}
+
+ul li:hover {
+  background-color: #a54f49;
+  color: white;
+}
+
+/* CARDS */
+
+.contenedor {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.card img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card {
+  width: 200px;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  color: #dcd6f7;
+  font-family: fantasy;
+  /* transparencia */
+  background-color: #4248747a;
+
+  text-align: center;
+}
