@@ -129,9 +129,8 @@ Cada vez que realices un cambio importante en tu proyecto se realizan los siguie
    ```bash
    git push origin main
    ```
-
-> [!NOTE]
-> Solo si es tu primer push en ese repositorio podés hacer `git push -u origin main`
+   > [!NOTE]
+   > Solo si es tu primer push en ese repositorio podés hacer `git push -u origin main`
 
 ## Otros comando útiles de Git
 
