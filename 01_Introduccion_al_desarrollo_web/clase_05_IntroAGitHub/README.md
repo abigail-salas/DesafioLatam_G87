@@ -14,7 +14,7 @@
 - `mkdir nombreCarpeta` : Crea una nueva carpeta
 
 - `touch nombreArchivo` : Crea un nuevo archivo
-
+  > [!CAUTION]
   > Tiene que incluir siempre el tipo de archivo, por ejemplo .css, .html, .md
 
 ## Configurar Git por primera vez
@@ -33,12 +33,17 @@
 
 Para verificar que todo esté correcto:
 
-- `git config --list`
+- ```bash
+    git config --list
+  ```
 
+  > [!NOTE]
   > Este comando devuelve una lista de configuracion de usuario
 
-- `git config user.name`
-
+- ```bash
+    git config user.name
+  ```
+  > [!NOTE]
   > Este comando verifica su nombre de usuario
 
 ## Inicializar un nuevo proyecto con comandos que da GitHub por default
@@ -83,35 +88,50 @@ git push -u origin main
 
    - Sube todos los cambios realizados y registras al repositorio remoto
 
-## Inicializar un nuevo repositorio con comandos propios
+## Inicializar un nuevo repositorio con comandos propios (**se utilizan 1 sola vez de manera _OBLIGATORIA_**)
 
-1. `git init` (se usa **una sola vez, _OBLIGATORIO_**)
+1. Inicializa un nuevo repositorio de Git en el directorio actual
 
-   - Inicializa un nuevo repositorio de Git en el directorio actual
+   ```bash
+   git init
+   ```
 
-2. `git branch -M main` (se usa **una sola vez, _OBLIGATORIO_**)
+2. Crea y cambia a la rama "main", que será la rama principal
 
-   - Crea y cambia a la rama "main", que será la rama principal
+   ```bash
+   git branch -M main
+   ```
 
-3. `git remote add origin https://github.com/abigail-salas/DesafioLatam_G87.git` (se usa **una sola vez, _OBLIGATORIO_**)
+3. Enlaza su repositorio local con el repositorio remoto de GitHub (La URL es de ejemplo)
 
-   - Enlaza su repositorio local con el repositorio remoto de GitHub
+   ```bash
+   git remote add origin https://github.com/abigail-salas/DesafioLatam_G87.git
+   ```
 
-## Guardar cambios y subirlos al repositorio
+## Guardar cambios y subirlos al repositorio (Se utilizan en más de 1 ocasión)
 
 Cada vez que realices un cambio importante en tu proyecto se realizan los siguientes comandos:
 
-1. `git add .` (se va a utilizar en más de 1 ocasion)
+1. Agrega **todos los archivos** modificados
 
-   - Agrega **todos los archivos** modificados
+   ```bash
+   git add .
+   ```
 
-2. `git commit -m "comentario relacionado al cambio"` (se va a utilizar en más de 1 ocasion)
+2. Registra todos los cambios que se agregaron en el comando anterior. Lo que ésta entre comillas va a variar dependiendo del cambio realizado
 
-   - Registra todos los cambios que se agregaron en el comando anterior. Lo que ésta entre comillas va a variar dependiendo del cambio realizado
+   ```bash
+   git commit -m "comentario relacionado al cambio"
+   ```
 
-3. `git push origin main` (se va a utilizar en más de 1 ocasion)
+3. Sube todos los cambios realizados y registras al repositorio remoto
 
-   - Sube todos los cambios realizados y registras al repositorio remoto
+   ```bash
+   git push origin main
+   ```
+
+   > [!NOTE]
+   > Solo si es tu primer push en ese repositorio podés hacer `git push -u origin main`
 
 ## Otros comando útiles de Git
 
@@ -121,3 +141,14 @@ Cada vez que realices un cambio importante en tu proyecto se realizan los siguie
 git status
 ```
 
+### 2. Ver el historial de commits
+
+```bash
+git log
+```
+
+### 3. Clonar un repositorio (URL de ejemplo)
+
+```bash
+git clone https://github.com/abigail-salas/DesafioLatam_G87.git
+```
