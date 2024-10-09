@@ -82,3 +82,42 @@ git push -u origin main
 7. `git push -u origin main` (se va a utilizar en más de 1 ocasion sin el "-u")
 
    - Sube todos los cambios realizados y registras al repositorio remoto
+
+## Inicializar un nuevo repositorio con comandos propios
+
+1. `git init` (se usa **una sola vez, _OBLIGATORIO_**)
+
+   - Inicializa un nuevo repositorio de Git en el directorio actual
+
+2. `git branch -M main` (se usa **una sola vez, _OBLIGATORIO_**)
+
+   - Crea y cambia a la rama "main", que será la rama principal
+
+3. `git remote add origin https://github.com/abigail-salas/DesafioLatam_G87.git` (se usa **una sola vez, _OBLIGATORIO_**)
+
+   - Enlaza su repositorio local con el repositorio remoto de GitHub
+
+## Guardar cambios y subirlos al repositorio
+
+Cada vez que realices un cambio importante en tu proyecto se realizan los siguientes comandos:
+
+1. `git add .` (se va a utilizar en más de 1 ocasion)
+
+   - Agrega **todos los archivos** modificados
+
+2. `git commit -m "comentario relacionado al cambio"` (se va a utilizar en más de 1 ocasion)
+
+   - Registra todos los cambios que se agregaron en el comando anterior. Lo que ésta entre comillas va a variar dependiendo del cambio realizado
+
+3. `git push origin main` (se va a utilizar en más de 1 ocasion)
+
+   - Sube todos los cambios realizados y registras al repositorio remoto
+
+## Otros comando útiles de Git
+
+### 1. Ver en qué estado está el repositorio
+
+```bash
+git status
+```
+
