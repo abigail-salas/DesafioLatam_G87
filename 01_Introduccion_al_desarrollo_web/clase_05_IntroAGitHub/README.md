@@ -14,8 +14,8 @@
 - `mkdir nombreCarpeta` : Crea una nueva carpeta
 
 - `touch nombreArchivo` : Crea un nuevo archivo
-  > [!CAUTION]
-  > Tiene que incluir siempre el tipo de archivo, por ejemplo .css, .html, .md
+> [!WARNING]
+> Tiene que incluir siempre el tipo de archivo, por ejemplo .css, .html, .md
 
 ## Configurar Git por primera vez
 
@@ -36,15 +36,14 @@ Para verificar que todo esté correcto:
 - ```bash
     git config --list
   ```
-
-  > [!NOTE]
-  > Este comando devuelve una lista de configuracion de usuario
+> [!NOTE]
+> Este comando devuelve una lista de configuracion de usuario
 
 - ```bash
     git config user.name
   ```
-  > [!NOTE]
-  > Este comando verifica su nombre de usuario
+> [!NOTE]
+> Este comando verifica su nombre de usuario
 
 ## Inicializar un nuevo proyecto con comandos que da GitHub por default
 
@@ -58,6 +57,7 @@ git remote add origin https://github.com/abigail-salas/DesafioLatam_G87.git
 git push -u origin main
 ```
 
+> [!NOTE]
 > ↑↑↑ Serie de comando que da github a la hora de crear un nuevo repositorio
 
 1. `echo "# DesafioLatam_G87" >> README.md` (opcional)
@@ -88,7 +88,10 @@ git push -u origin main
 
    - Sube todos los cambios realizados y registras al repositorio remoto
 
-## Inicializar un nuevo repositorio con comandos propios (**se utilizan 1 sola vez de manera _OBLIGATORIA_**)
+## Inicializar un nuevo repositorio con comandos propios
+
+> [!CAUTION] 
+> **se utilizan 1 sola vez de manera _OBLIGATORIA_**
 
 1. Inicializa un nuevo repositorio de Git en el directorio actual
 
@@ -108,7 +111,10 @@ git push -u origin main
    git remote add origin https://github.com/abigail-salas/DesafioLatam_G87.git
    ```
 
-## Guardar cambios y subirlos al repositorio (Se utilizan en más de 1 ocasión)
+## Guardar cambios y subirlos al repositorio 
+
+> [!IMPORTANT]
+> Se utilizan en más de 1 ocasión
 
 Cada vez que realices un cambio importante en tu proyecto se realizan los siguientes comandos:
 
@@ -129,8 +135,8 @@ Cada vez que realices un cambio importante en tu proyecto se realizan los siguie
    ```bash
    git push origin main
    ```
-   > [!NOTE]
-   > Solo si es tu primer push en ese repositorio podés hacer `git push -u origin main`
+> [!TIP]
+> Solo si es tu primer push en ese repositorio podés hacer `git push -u origin main`
 
 ## Otros comando útiles de Git
 
