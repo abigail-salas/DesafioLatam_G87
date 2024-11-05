@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.boxes * {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  margin: 5px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.alignItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* flex-direction: column; */
+
+  border: 2px solid brown;
+  margin: 20px;
+  height: 300px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: flex-end;
+  background-image: url(./desktop-wallpaper-night-cities-city-panorama.jpg);
+  background-size: cover;
+}
+
+.content {
+  text-align: center;
+  font-size: 1em;
+  font-stretch: expanded;
+  height: 8em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.357);
+}
+
+menu {
+  background-color: rgb(42, 3, 88);
+  width: 20em;
+  min-height: 100vh;
+}
+
+menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+ul li {
+  list-style: none;
+}
+
+.padre {
+  display: flex;
+}
