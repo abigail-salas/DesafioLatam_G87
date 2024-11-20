@@ -1,0 +1,132 @@
+body {
+  color: aliceblue;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 576px) /* Extra Small */ {
+  body {
+    background-color: brown;
+    font-family: monospace;
+  }
+
+  button {
+    border-radius: 20px;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+  }
+
+  .pagina {
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-columns: auto;
+
+    min-height: 100vh;
+
+    grid-template-areas:
+      "nav"
+      "main"
+      "footer";
+  }
+}
+
+@media (min-width: 576px) /* Small */ {
+  body {
+    background-color: black;
+    font-family: fantasy;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .pagina {
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-columns: auto 1fr;
+
+    min-height: 100vh;
+
+    grid-template-areas:
+      "nav main"
+      "nav main"
+      "nav footer";
+  }
+}
+
+@media (min-width: 768px) /* Medium */ {
+  body {
+    background-color: darkcyan;
+    font-family: inherit;
+  }
+
+  button {
+    background-color: black;
+    color: aliceblue;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 992px) /* Large */ {
+  body {
+    background-color: darkolivegreen;
+    font-family: serif;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 1200px) /* Extra Large */ {
+  body {
+    background-color: darkblue;
+    font-family: cursive;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+.grid p {
+  border: 2px solid;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+}
+
+.pagina {
+  display: grid;
+}
+
+nav {
+  grid-area: nav;
+  padding: 10px;
+  background-color: darkslategray;
+}
+
+main {
+  grid-area: main;
+  background-color: darkcyan;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: dimgray;
+  padding: 10px;
+}
