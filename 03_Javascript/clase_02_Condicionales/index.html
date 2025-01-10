@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Tema: Condicionales</h1>
+
+    <!-- Condicionales + DOM -->
+    <p id="secret-result">_________</p>
+    <input type="text" id="secret" />
+
+    <button
+      onclick="let value = document.querySelector('#secret').value;
+    let parrafo = document.querySelector('#secret-result');
+    
+    if (value === 'Desafio Latam') {
+      parrafo.innerHTML = 'Contraseña correcta';
+    } else {
+      parrafo.innerHTML = 'Contraseña incorrecta';
+    }"
+    >
+      Verificar
+    </button>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
