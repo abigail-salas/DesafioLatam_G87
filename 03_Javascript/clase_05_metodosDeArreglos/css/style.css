@@ -1,0 +1,20 @@
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+.seccion-invitados {
+  width: 400px;
+  background-color: darkcyan;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px, 10px;
+}
+
+.seccion-lista {
+  width: 400px;
+  background-color: darkred;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px, 10px;
+}
