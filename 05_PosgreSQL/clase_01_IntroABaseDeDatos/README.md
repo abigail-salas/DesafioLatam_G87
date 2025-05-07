@@ -165,3 +165,58 @@ TV --> TV1
     | :------: | ------ |
     | `IF EXISTS` | Comprueba si la tabla existe antes de intentar eliminarla. Evita errores si la tabla no está presente.|
     | `users` | Nombre de la tabla que se eliminará si existe. |
+
+# Ejercicios
+
+### Ejercicio 1: Creación de Tablas y Consulta Básica
+
+1. Crear una tabla de `clientes` con los siguientes campos:
+
+   - `ID` (clave primaria, tipo serial)
+   - `nombre` (varchar de hasta 100 caracteres)
+   - `email` (varchar de hasta 100 caracteres)
+
+2. Insertar datos:
+
+   - Inserta al menos 6 registros en la tabla `clientes`
+
+3. Consulta básica:
+
+   - Selecciona todos los registros de la tabla `clientes`
+   - Selecciona clientes específicos utilizando `WHERE`
+
+### Ejercicio 2: Selección y Filtrado de Datos
+
+1. Seleccionar columnas específicas:
+
+   - Selecciona solo el `nombre` y el `email` de todos los clientes
+
+2. Limitar datos:
+
+   - Selecciona los primeros 3 clientes
+
+3. Contar registros:
+
+   - Cuenta cuántos clientes hay en la tabla `clientes`
+
+4. Usar `ORDER BY`:
+
+   - Ordena los clientes por nombre en orden ascendente
+
+### Ejercicio 3: Manipulación de Datos
+
+1. Actualizar registros:
+
+   - Cambia el correo electrónico del cliente con `ID = 1` a `juan.perez@example.com`
+
+2. Eliminar registros:
+
+   - Elimina el cliente con `id = 2`
+
+3. Agregar una nueva columna:
+
+   - Añade una columna `telefono` a la tabla `clientes` de tipo `VARCHAR(15)`
+
+4. Eliminar una columna:
+
+   - Elimina la columna `email` de la tabla
