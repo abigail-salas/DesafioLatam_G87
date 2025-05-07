@@ -94,7 +94,6 @@
 > [!CAUTION]
 > Jamás olvides poner el WHERE en el DELETE FROM!!!!!
 
-
 ## Comandos para crear, actualizar y eliminar tablas
 
 ```mermaid
@@ -127,3 +126,42 @@ TT --> TT1
 TB --> TB1
 TV --> TV1
 ```
+
+- ### Crear Tablas
+
+  - `CREATE TABLE users (ID SERIAL PRIMARY KEY, NAME VARCHAR(100), EMAIL VARCHAR(100));`
+    | Comando | Descripcion |
+    | :------: | ------ |
+    | `CREATE TABLE` | Indica que vamos a crear una nueva tabla en la base de datos.|
+    | `users` | Nombre de la tabla que estamos creando. |
+    | `ID SERIAL PRIMARY KEY` | Crea una columna ID con tipo SERIAL que se auto-incrementa, y define esta columna como la clave primaria (única). |
+    | `NAME VARCHAR(100)` | Crea una columna NAME de tipo VARCHAR con una longitud máxima de 100 caracteres. |
+    | `EMAIL VARCHAR(100)` | Crea una columna EMAIL de tipo VARCHAR con una longitud máxima de 100 caracteres.|
+
+- ### Modificar Tablas
+
+  - `ALTER TABLE users ADD COLUMN age INT;`
+    | Comando | Descripcion |
+    | :------: | ------ |
+    | `ALTER TABLE` | Indica que vamos a modificar la estructura de una tabla existente.|
+    | `users` | Nombre de la tabla que estamos creando. |
+    | `ADD COLUMN age INT` | Añade una nueva columna llamada age de tipo INT a la tabla users.|
+
+  - `ALTER TABLE users DROP COLUMN email;`
+    | Comando | Descripcion |
+    | :------: | ------ |
+    | `DROP COLUMN email` | Elimina la columna email de la tabla orders.|
+
+- ### Borrar Tablas
+
+  - `DROP TABLE users;`
+    | Comando | Descripcion |
+    | :------: | ------ |
+    | `DROP TABLE` | Indica que vamos a eliminar una tabla de la base de datos.|
+    | `users` | Nombre de la tabla que se eliminará. Esta operación es irreversible y eliminará toda la información almacenada. |
+
+  - `DROP TABLE IF EXISTS users;`
+    | Comando | Descripcion |
+    | :------: | ------ |
+    | `IF EXISTS` | Comprueba si la tabla existe antes de intentar eliminarla. Evita errores si la tabla no está presente.|
+    | `users` | Nombre de la tabla que se eliminará si existe. |
