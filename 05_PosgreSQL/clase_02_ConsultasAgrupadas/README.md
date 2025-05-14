@@ -170,7 +170,7 @@ INSERT INTO ventas (categoria, monto) values
   | :---: | ---- |
   | `IN` | Filtra las categorías de ventas que coinciden con algún nombre en la tabla monedas. |
 
---------------------------------------------------------------------------------------------------------------------
+---
 
 # Ejercicio Práctico
 
@@ -220,33 +220,65 @@ Estás gestionando una tienda en línea que vende productos de diferentes catego
 
    - Usa `GROUP BY` y `SUM` para calcular cuántos productos se han vendido por cada categoría.
 
+   ```sql
+   SELECT categoria, SUM(cantidad) AS total_vendido FROM productos p, ventas v WHERE p.id = v.id GROUP BY categoria;
+   ```
+
 6. **Mostrar las categorías que han vendido más de 10 productos**:
 
    - Usa `GROUP BY` y `HAVING` para filtrar los grupos cuyo total vendido sea mayor a 10.
+
+   ```sql
+   SELECT categoria, SUM(cantidad) AS total_vendido FROM productos p, ventas v WHERE p.id = v.id GROUP BY categoria HAVING SUM(cantidad) > 10;
+   ```
 
 7. **Calcular el precio promedio de todos los productos**:
 
    - Utiliza la función `AVG` para calcular el precio promedio.
 
+   ```sql
+   SELECT AVG(precio) AS total_promedio FROM productos;
+   ```
+
 8. **Listar los productos cuyo precio es mayor que el precio promedio**:
 
    - Realiza una subconsulta para encontrar el precio promedio y usa `WHERE` para filtrar los productos.
+
+   ```sql
+   SELECT nombre, precio FROM productos WHERE precio > (SELECT AVG(precio) FROM productos);
+   ```
 
 9. **Contar cuántos productos hay en cada categoría**:
 
    - Usa `GROUP BY` y `COUNT` para contar cuántos productos hay en cada categoría.
 
+   ```sql
+   SELECT categoria, COUNT(*) AS total_productos FROM productos GROUP BY categoria;
+   ```
+
 10. **Listar las ventas realizadas después del 2 de octubre de 2024**:
 
     - Usa `WHERE` para filtrar las ventas por fecha.
+
+    ```sql
+    SELECT * FROM ventas WHERE fecha_venta > '2024-10-02';
+    ```
 
 11. **Encontrar el producto con el precio más alto y más bajo**:
 
     - Usa las funciones `MAX` y `MIN` para encontrar el precio máximo y mínimo.
 
+    ```sql
+    SELECT MAX(precio) AS precio_maximo, MIN(precio) AS precio_minimo FROM productos;
+    ```
+
 12. **Mostrar los nombres de las categorías de productos con nombres que contengan la letra "a"**:
 
     - Usa `DISTINCT` y `LIKE` para filtrar por patrones de texto.
+
+    ```sql
+    SELECT DISTINCT(nombre) FROM productos WHERE nombre LIKE '%a%';
+    ```
 
 13. **Listar las categorías con un total de ingresos (precio \* cantidad) mayor a 2000**:
 
