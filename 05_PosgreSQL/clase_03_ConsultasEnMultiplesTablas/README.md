@@ -240,25 +240,49 @@ INSERT INTO comments (content, post_id) VALUES
 
    - Consulta para obtener todas las publicaciones y sus comentarios, utilizando un `INNER JOIN`.
 
+   ```sql
+   SELECT * FROM posts p INNER JOIN comments c ON c.post_id = p.id;
+   ```
+
 2. **LEFT JOIN** - Mostrar todas las publicaciones con comentarios (o NULL si no tienen):
 
    - Usa un `LEFT JOIN` para mostrar todas las publicaciones, incluso aquellas sin comentarios (donde los comentarios serán `NULL`).
+
+   ```sql
+
+   ```
 
 3. **FULL JOIN** - Mostrar todas las publicaciones y todos los comentarios, incluso si no coinciden:
 
    - Realiza una consulta que incluya todas las publicaciones y todos los comentarios, incluso si no tienen coincidencia.
 
+   ```sql
+
+   ```
+
 4. **CROSS JOIN** - Mostrar todas las combinaciones posibles entre publicaciones y comentarios:
 
    - Realiza una consulta con `CROSS JOIN` que genere un producto cartesiano entre las publicaciones y los comentarios.
+
+   ```sql
+
+   ```
 
 5. **Subconsulta** - Mostrar los productos cuyo precio es mayor al promedio:
 
    - Realiza una subconsulta para encontrar los productos cuyo precio es mayor al precio promedio de todos los productos.
 
+   ```sql
+
+   ```
+
 6. **INNER JOIN** con función de agregación - Mostrar el total de ventas por producto:
 
    - Muestra cuántas unidades se han vendido de cada producto, utilizando `INNER JOIN` y la función de agregación `SUM()`.
+
+   ```sql
+
+   ```
 
 ### Consultas Avanzadas con Subconsultas y Condicionales
 
