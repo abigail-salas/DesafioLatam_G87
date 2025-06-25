@@ -1,0 +1,8 @@
+[
+  { "id": 1, "nombre": "Audifonos", "precio": 18990 },
+  { "id": 2, "nombre": "Aro de Luz", "precio": 21990 },
+  { "id": 3, "nombre": "Monitor", "precio": 59990 },
+  { "id": 4, "nombre": "Teclado", "precio": 5645 },
+  { "id": 5, "nombre": "Microfono", "precio": 6510 },
+  { "id": 5, "nombre": "Microfono", "precio": 6510 }
+]
